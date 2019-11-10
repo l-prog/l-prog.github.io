@@ -8,14 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>jdbc流程 | 刘奇</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="mysql与java之间使用Connection连接要先初始化驱动Class.forName()需要捕捉异常getConnection也需要捕捉异常class.forName()将类放入jvm中,运行时执行static代码 因为在进行数据库的增删改查的操作时都需要与数据库进行连接,所以可以写一个方法 创建preparedStatement接口执行sql语句创建ResultSet接口接收结果集 1.">
+<meta property="og:type" content="article">
 <meta property="og:title" content="jdbc流程">
 <meta property="og:url" content="http://yoursite.com/2019/11/10/jdbc流程/index.html">
 <meta property="og:site_name" content="刘奇">
+<meta property="og:description" content="mysql与java之间使用Connection连接要先初始化驱动Class.forName()需要捕捉异常getConnection也需要捕捉异常class.forName()将类放入jvm中,运行时执行static代码 因为在进行数据库的增删改查的操作时都需要与数据库进行连接,所以可以写一个方法 创建preparedStatement接口执行sql语句创建ResultSet接口接收结果集 1.">
 <meta property="og:locale" content="zh-CH">
-<meta property="og:updated_time" content="2019-11-10T14:55:25.165Z">
+<meta property="og:updated_time" content="2019-11-10T14:57:54.644Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jdbc流程">
+<meta name="twitter:description" content="mysql与java之间使用Connection连接要先初始化驱动Class.forName()需要捕捉异常getConnection也需要捕捉异常class.forName()将类放入jvm中,运行时执行static代码 因为在进行数据库的增删改查的操作时都需要与数据库进行连接,所以可以写一个方法 创建preparedStatement接口执行sql语句创建ResultSet接口接收结果集 1.">
   
     <link rel="alternative" href="/atom.xml" title="刘奇" type="application/atom+xml">
   
@@ -175,7 +178,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>mysql与java之间使用Connection连接<br>要先初始化驱动<br>Class.forName()需要捕捉异常<br>getConnection也需要捕捉异常<br>class.forName()将类放入jvm中,运行时执行static代码</p>
+<p>因为在进行数据库的增删改查的操作时都需要与数据库进行连接,所以可以写一个方法</p>
+<p>创建preparedStatement接口执行sql语句<br>创建ResultSet接口接收结果集</p>
+<p>1.初始化驱动<br>2.建立JDBC和数据库之间的Connection连接<br>3.创建Statement或者PreparedStatement接口，执行SQL语句<br>在第三步中执行完必须关闭创建好的Connection PreparedStatement ResultSet变量<br>4.处理和显示结果</p>
+
       
 
       
