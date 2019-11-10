@@ -6,19 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>对数据库的操作(1) | 刘奇</title>
+  <title>jdbc流程 | 刘奇</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#对数据库的增删改查插入的关键字：insert语法是insert into 表名[ (字段1，字段2，…，字段n) ]  values  (字段1，字段2，…，字段n)；需要注意的是字段数量要一致，否则会报错！！！[ ]的意思是可有可无，简单来说当你要插入所以字段的时候你可以选择不指定字段则需要在values后的括号中写上那一行所有的值，不然会报错！修改的关键字：update语法是update 表">
-<meta property="og:type" content="article">
-<meta property="og:title" content="对数据库的操作(1)">
-<meta property="og:url" content="http://yoursite.com/2019/10/16/对数据库的操作-1/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="jdbc流程">
+<meta property="og:url" content="http://yoursite.com/2019/11/10/jdbc流程/index.html">
 <meta property="og:site_name" content="刘奇">
-<meta property="og:description" content="#对数据库的增删改查插入的关键字：insert语法是insert into 表名[ (字段1，字段2，…，字段n) ]  values  (字段1，字段2，…，字段n)；需要注意的是字段数量要一致，否则会报错！！！[ ]的意思是可有可无，简单来说当你要插入所以字段的时候你可以选择不指定字段则需要在values后的括号中写上那一行所有的值，不然会报错！修改的关键字：update语法是update 表">
 <meta property="og:locale" content="zh-CH">
-<meta property="og:updated_time" content="2019-10-16T03:49:40.565Z">
+<meta property="og:updated_time" content="2019-11-10T14:55:25.165Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="对数据库的操作(1)">
-<meta name="twitter:description" content="#对数据库的增删改查插入的关键字：insert语法是insert into 表名[ (字段1，字段2，…，字段n) ]  values  (字段1，字段2，…，字段n)；需要注意的是字段数量要一致，否则会报错！！！[ ]的意思是可有可无，简单来说当你要插入所以字段的时候你可以选择不指定字段则需要在values后的括号中写上那一行所有的值，不然会报错！修改的关键字：update语法是update 表">
+<meta name="twitter:title" content="jdbc流程">
   
     <link rel="alternative" href="/atom.xml" title="刘奇" type="application/atom+xml">
   
@@ -158,28 +155,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-对数据库的操作-1" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-jdbc流程" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      对数据库的操作(1)
+      jdbc流程
     </h1>
   
 
         
-        <a href="/2019/10/16/对数据库的操作-1/" class="archive-article-date">
-  	<time datetime="2019-10-16T03:30:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-16</time>
+        <a href="/2019/11/10/jdbc流程/" class="archive-article-date">
+  	<time datetime="2019-11-10T14:55:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#对数据库的增删改查<br>插入的关键字：insert<br>语法是insert into 表名[ (字段1，字段2，…，字段n) ]  values  (字段1，字段2，…，字段n)；<br>需要注意的是字段数量要一致，否则会报错！！！<br>[ ]的意思是可有可无，简单来说当你要插入所以字段的时候你可以选择不指定字段则需要在values后的括号中写上那一行所有的值，不然会报错！<br>修改的关键字：update<br>语法是update 表名 set 字段=值 where 条件；<br>删除的关键字：delete<br>语法是delect from 表名 [ where 条件 ];<br>查找的关键字：select<br>语法是select * from 表名；</p>
-
+        
       
 
       
@@ -258,7 +254,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/16/对数据库的操作-1/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/10/jdbc流程/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -272,18 +268,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/11/10/jdbc流程/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          jdbc流程
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/10/12/mysql-约束/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">mysql----约束</div>
+    <a href="/2019/10/16/对数据库的操作-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">对数据库的操作(1)</div>
       <i class="icon-circle-right"></i>
     </a>
   
